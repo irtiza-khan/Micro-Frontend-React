@@ -14,6 +14,7 @@ function MicroFrontend({ name, host, history }) {
       return;
     }
     
+    //Micro front end going to the specific port and fetching asset.manifest
     fetch(`${host}/asset-manifest.json`)
       .then((res) => res.json())
       .then((manifest) => {
